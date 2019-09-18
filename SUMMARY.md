@@ -1,4 +1,4 @@
 # Table of contents
 
-* [阿溜溜](README.md)
+* [MTP模版配置方案](README.md)
 
