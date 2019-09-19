@@ -43,7 +43,7 @@
 \#define CrashReport    0  
 \#define ShareSDK         1
 
-
+![](.gitbook/assets/341568880567_.pic.jpg)
 
 ### 4.生成Podfile
 
@@ -63,5 +63,18 @@
 
 ### 6. 编译代码
 
- 
+ 通过xcodebuild命令对拉取完SDK的项目代码进行编译
+
+```text
+xcodebuild archive 
+           -archivePath <archivePath>
+           -project <projectName>
+           -workspace <workspaceName>
+           -scheme <schemeName>    
+           -configuration <Debug|Release>
+```
+
+### 7.导出库文件
+
+将生成的.a库与头文件导出到指定目录作为最后的输出
 
