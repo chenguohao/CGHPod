@@ -6,9 +6,18 @@
 
 ## 流程
 
-![](.gitbook/assets/181568792290_.pic.jpg)
+![](.gitbook/assets/221568859204_.pic.jpg)
 
 ## 详细
+
+整体结构分为三部分：脚本，项目文件，wrapper仓库
+
+![](.gitbook/assets/241568861102_.pic.jpg)
+
+## 1.运行脚本
+
+输入指令：`./MTPTemplate.py`  
+5**55**
 
 
 
