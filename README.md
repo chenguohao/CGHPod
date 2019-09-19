@@ -12,7 +12,7 @@
 
 整体结构分为三部分：脚本，项目文件，wrapper仓库
 
-![](.gitbook/assets/261568862743_.pic.jpg)
+![](.gitbook/assets/311568873057_.pic.jpg)
 
 ### 1.运行脚本
 
@@ -33,7 +33,7 @@
 
 ### 2.生成配置文件
 
-![](.gitbook/assets/281568864591_.pic.jpg)
+![](.gitbook/assets/321568874969_.pic.jpg)
 
 ### 3.修改代码
 
@@ -46,4 +46,22 @@
 
 
 ### 4.生成Podfile
+
+根据配置文件中各项SDK具体参数，在podfile中，指明需要下载的SDK及版本，每个SDK由两部分组成：wrapper路径+源代码地址，  
+\* wrapper路径即本地wrapper仓库的路径，作为本地pod  
+\* 源代码则指向远端git地址  
+ `# SmartLogger  
+    pod 'SmartLogger_wrapper', :path => '../../SmartLogger/SmartLoggerWrapper_v_1_2'  
+    pod 'SmartLogger', '1.2'  
+# ShareSDK  
+    pod 'ShareSDK_wrapper', :path => '../../ShareSDK/ShareSDKWrapper_v_1_0'  
+    pod 'ShareSDK', '1.0'`
+
+### 5. Pod Install
+
+ 通过**cocopod** 的代码管理指令进行获取SDK。
+
+### 6. 编译代码
+
+ 
 
